@@ -11,53 +11,66 @@
     </style>
 </head>
 <body style="background-color: #A4ABBD;">
-    <nav class="navbar navbar-expand-sm " style="background-color: #404756;">
-        <div class="container-fluid" >
-            <a class="navbar-brand text-white" href="javascript:void(0)">Logo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mynavbar">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="javascript:void(0)">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="javascript:void(0)">Parte 1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="javascript:void(0)">Parte 2</a>
-                    </li>
-                </ul>
-                <form class="d-flex" style="font-family: 'Cabin', sans-serif;">
-                    <input class="form-control me-2" type="text" placeholder="Search">
-                    <button class="btn btn-primary" type="button" style="background-color: #5E86C2;">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
 
-
-    <div class="container-sm p-5 text-white position-absolute top-50 start-50 translate-middle" style="background-color: #404756;">
-        <form>
-            <h1 class="h1 mb-3 fw-normal text-center" style="font-family:'Bebas Neue', sans-serif;">Inicio de sesion</h1>
+    <header class="header">
+        <div class="container-sm p-5 text-white position-absolute top-50 start-50 translate-middle" style="background-color: #404756;">
+            <form>
+                <h1 class="h1 mb-3 fw-normal text-center" style="font-family:'Bebas Neue', sans-serif;">Inicio de sesion</h1>
+                
+                <div class="form-floating mb-3 col-md-8 d-grid gap-2 col-6 mx-auto" style="font-family: 'Cabin', sans-serif;">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="Ingresa un correo">
+                    <label for="floatingInput">Correo electronico</label>
+                </div>
+                
+                <div class="form-floating mb-3 col-md-8 d-grid gap-2 col-6 mx-auto" style="font-family: 'Cabin', sans-serif;">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña" >
+                    <label for="floatingPassword">Contraseña</label>
+                </div>
             
-            <div class="form-floating mb-3 col-md-8 d-grid gap-2 col-6 mx-auto" style="font-family: 'Cabin', sans-serif;">
-                <input type="email" class="form-control" id="floatingInput" placeholder="Ingresa un correo">
-                <label for="floatingInput">Correo electronico</label>
-            </div>
-            <div class="form-floating mb-3 col-md-8 d-grid gap-2 col-6 mx-auto" style="font-family: 'Cabin', sans-serif;">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña" >
-                <label for="floatingPassword">Contraseña</label>
-            </div>
+                <div class="form-check text-start my-3 col-8 mx-auto">
+                    <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault" style="font-family:'Bebas Neue', sans-serif;">Recuerdame</label>
+                </div>
+                
+                <button class="btn text-white w-50 py-2 d-grid gap-3 col-6 mx-auto" style="background-color: #5E86C2; font-family:'Bebas Neue', sans-serif; text-align:center;" type="submit"><h3>Ingresar</h3></button>
+                
+            </form>
+        </div>
+    </header> 
+
+    <section class="login">
         
-            <div class="form-check text-start my-3 col-8 mx-auto">
-                <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault" style="font-family:'Bebas Neue', sans-serif;">Recuerdame</label>
+        <nav class="navbar navbar-expand-sm " style="background-color: #404756;">
+            <div class="container-fluid" >
+                
+                <a class="navbar-brand text-white" href="javascript:void(0)">Logo</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="javascript:void(0)">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="javascript:void(0)">Parte 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="javascript:void(0)">Parte 2</a>
+                        </li>
+                    </ul>
+                    
+                    <form class="d-flex" style="font-family: 'Cabin', sans-serif;">
+                        <input class="form-control me-2" type="text" placeholder="Search">
+                        <button class="btn btn-primary" type="button" style="background-color: #5E86C2;">Search</button>
+                    </form>
+                    
+                </div>
             </div>
-            <button class="btn text-white w-50 py-2 d-grid gap-3 col-6 mx-auto" style="background-color: #5E86C2; font-family:'Bebas Neue', sans-serif; text-align:center;" type="submit"><h3>Ingresar</h3></button>
-        </form>
-    </div>
+        </nav>
+    </section>
     
 </body>
 </html>
